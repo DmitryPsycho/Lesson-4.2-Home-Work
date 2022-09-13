@@ -24,9 +24,10 @@ struct ColorTextField: View {
         if (0...255).contains(slider) {
             slider = slider
             return
+        } else {
+            slider = 0
+            alertPresented.toggle()
         }
-        slider = 0
-        alertPresented.toggle()
     }
 }
 
