@@ -13,6 +13,7 @@
 		4020BBD128CF4F7D00301F59 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4020BBD028CF4F7D00301F59 /* Preview Assets.xcassets */; };
 		4020BBDC28CF84D300301F59 /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4020BBDB28CF84D300301F59 /* ColorView.swift */; };
 		4020BBE028CF95A100301F59 /* ColorSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4020BBDF28CF95A100301F59 /* ColorSliderView.swift */; };
+		4020BBE428D07CE400301F59 /* ColorTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4020BBE328D07CE400301F59 /* ColorTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		4020BBD028CF4F7D00301F59 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4020BBDB28CF84D300301F59 /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 		4020BBDF28CF95A100301F59 /* ColorSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSliderView.swift; sourceTree = "<group>"; };
+		4020BBE328D07CE400301F59 /* ColorTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				4020BBC928CF4F7B00301F59 /* Lesson_4_2_Home_WorkApp.swift */,
 				4020BBCB28CF4F7B00301F59 /* ColorAppView.swift */,
 				4020BBDF28CF95A100301F59 /* ColorSliderView.swift */,
+				4020BBE328D07CE400301F59 /* ColorTextField.swift */,
 				4020BBDB28CF84D300301F59 /* ColorView.swift */,
 				4020BBCD28CF4F7D00301F59 /* Assets.xcassets */,
 				4020BBCF28CF4F7D00301F59 /* Preview Content */,
@@ -146,6 +149,7 @@
 				4020BBCC28CF4F7B00301F59 /* ColorAppView.swift in Sources */,
 				4020BBE028CF95A100301F59 /* ColorSliderView.swift in Sources */,
 				4020BBCA28CF4F7B00301F59 /* Lesson_4_2_Home_WorkApp.swift in Sources */,
+				4020BBE428D07CE400301F59 /* ColorTextField.swift in Sources */,
 				4020BBDC28CF84D300301F59 /* ColorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

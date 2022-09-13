@@ -14,7 +14,12 @@ struct ColorView: View {
     
     var body: some View {
         RoundedRectangle(cornerRadius: 20)
-            .foregroundColor(Color(UIColor(red: redValue/255, green: greenValue/255, blue: blueValue/255, alpha: 1)))
+            .foregroundColor(Color(UIColor(
+                red: redValue/255,
+                green: greenValue/255,
+                blue: blueValue/255,
+                alpha: 1
+            )))
             .overlay(RoundedRectangle(cornerRadius: 20).stroke(Color.white, lineWidth: 5))
     }
 }
