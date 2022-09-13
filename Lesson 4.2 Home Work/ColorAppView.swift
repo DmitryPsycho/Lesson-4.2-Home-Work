@@ -47,6 +47,8 @@ struct ColorApp: View {
                             Spacer()
                             Button("DONE") {
                                 focusColorState = nil
+                                
+    // Если вы это читаете, то значит я не разобрался как увязать фокус и значение слайдера через байндинг xD
                             }
                         }
                     }
@@ -93,7 +95,6 @@ struct ColorChangeHStack: View {
             
             ColorTextField(slider: $slider)
                 .frame(width: 45, height: 20, alignment: .trailing)
-            
         }
         .padding()
     }
