@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct ColorSliderView: View {
-    @Binding var value: Double
+    @Binding var sliderValue: Double
     var sliderColor: Color
     
     var body: some View {
-        Slider(value: $value, in: 0...255, step: 1)
+        Slider(value: $sliderValue, in: 0...255, step: 1)
             .tint(sliderColor)
             .padding()
     }
@@ -20,6 +20,6 @@ struct ColorSliderView: View {
 
 struct ColorSliderView_Previews: PreviewProvider {
     static var previews: some View {
-        ColorSliderView(value: .constant(0), sliderColor: .red)
+        ColorSliderView(sliderValue: .constant(0), sliderColor: .red)
     }
 }

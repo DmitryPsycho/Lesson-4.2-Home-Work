@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct ColorTextField: View {
-    @Binding var slider: Double
+    @Binding var sliderValue: Double
     @State private var alertPresented = false
     
     var body: some View {
-        TextField("", value: $slider, formatter: NumberFormatter(), onCommit: validation)
+        TextField("", value: $sliderValue, formatter: NumberFormatter(), onCommit: validation)
             .textFieldStyle(.roundedBorder)
             .keyboardType(.numberPad)
             .alert("Wrong format", isPresented: $alertPresented, actions: {}) {
@@ -21,12 +21,12 @@ struct ColorTextField: View {
     }
     
     private func validation() {
-        if (0...255).contains(slider) {
-            slider = slider
+        if (0...255).contains(sliderValue) {
+            sliderValue = sliderValue
             return
         } else {
             // После обновления Xcode перестал работать сброс слайдера, хотя еще буквально днем все было ок
-            slider = 0
+            sliderValue = 0
             alertPresented.toggle()
         }
     }
@@ -34,6 +34,6 @@ struct ColorTextField: View {
 
 struct ColorTextField_Previews: PreviewProvider {
     static var previews: some View {
-        ColorTextField(slider: .constant(0))
+        ColorTextField(sliderValue: .constant(0))
     }
 }

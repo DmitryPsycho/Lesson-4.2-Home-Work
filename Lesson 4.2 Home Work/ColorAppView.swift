@@ -90,10 +90,10 @@ struct ColorChangeHStack: View {
                 .foregroundColor(.white)
                 .frame(width: 35, height: 20, alignment: .leading)
             
-            ColorSliderView(value: $slider, sliderColor: sliderColor)
+            ColorSliderView(sliderValue: $slider, sliderColor: sliderColor)
                 .frame(width: 300, height: 20, alignment: .leading)
             
-            ColorTextField(slider: $slider)
+            ColorTextField(sliderValue: $slider)
                 .frame(width: 45, height: 20, alignment: .trailing)
         }
         .padding()
