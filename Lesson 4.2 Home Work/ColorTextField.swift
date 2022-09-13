@@ -25,6 +25,7 @@ struct ColorTextField: View {
             slider = slider
             return
         } else {
+            // После обновления Xcode перестал работать сброс слайдера, хотя еще буквально днем все было ок
             slider = 0
             alertPresented.toggle()
         }
