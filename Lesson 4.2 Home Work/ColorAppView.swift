@@ -24,7 +24,7 @@ struct ColorApp: View {
         ZStack {
             VStack(spacing: 30) {
                 ColorView(redValue: $redSliderValue, greenValue: $greenSliderValue, blueValue: $blueSliderValue)
-                    .frame(width: 400, height: 200)
+                    .frame(height: 200)
                 
                 VStack {
                     ColorChangeHStack(slider: $redSliderValue, sliderColor: .red)
